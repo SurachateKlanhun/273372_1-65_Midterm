@@ -5,6 +5,10 @@ module.exports = (app) => {
     app.post('/user', UserController.create)
     
     app.put('/user', UserController.put)
+
+    app.Read('/user', UserController.Read)
+
+    app.Update('/user', UserController.Update)
     
     app.delete('/user', UserController.remove)
     

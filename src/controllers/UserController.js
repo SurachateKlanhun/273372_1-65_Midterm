@@ -7,6 +7,12 @@ module.exports ={
     put (req,res){
         res.send('แก้ไขข้อมูลผู้ใช้ '+JSON.stringify(req.body))
     },
+    Read (req,res){
+        res.send('อ่านข้อมูลผู้ใช้ '+JSON.stringify(req.body))
+    },
+    Update (req,res){
+        res.send('อัปเดทข้อมูลผู้ใช้ Id '+ JSON.stringify(req.body))
+    },
     
     remove (req,res){
         res.send('ลบข้อมูลผู้ใช้ Id '+ JSON.stringify(req.body))
